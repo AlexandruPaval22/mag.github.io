@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+     
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        
+     <title>Video Games Shop</title>
+
+    </head>
+
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+      --link-color: white;
+      --header-color: black;
+      --color-text: rgb(255, 255, 255);
+      --h3-color: black;
+}
+
+
+body {
+    background-image: url(/assetts/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#games {
+    background-size: contain;
+    background-repeat: repeat;
+    background-image: url(/assetts/games.jpg);
+    width: 100%;
+    height: 5em;
+}
+
+
+#header {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 2%;
+    color: var(--header-color);
+}
+
+.flex{ 
+    align-items: center;
+    text-align: center;
+}
+
+#header-img {
+    width: 18%;
+    height: 10%;
+}
+
+#nav-bar , .nav-link {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-shadow: 5px 5px 35px white;
+    
+}
+
+
+#nav-bar , .nav-link:hover {
+    color: var(--link-color);
+    text-shadow: 5px 5px 35px white;
+ 
+}
+
+main {
+    margin-top: 5%;
+}
+
+section{
+    display:block;
+    text-align: center;
+    padding: 2%;
+    color: var(--color-text);
+}
+
+ h3 {
+    color: var(--h3-color);
+    width: 100%;
+    margin-bottom: 1%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 5px 35px white;
+}
+
+h1 {
+    text-shadow: 5px 5px 35px white;
+}
+
+#logo1::before {
+    content: "";
+    background-image: url(/assetts/gta5.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 3em;
+}
+
+#logo2::before {
+    content: "";
+    background-image: url(/assetts/courier.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 2em;
+}
+
+#logo3::before {
+    content: "";
+    background-image: url(/assetts/return.webp);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+#produce {
+    margin: 5% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.game1 , .game2 , .game3 {
+    margin: 0 3%;
+}
+
+
+.game1 {
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 17em;
+    height: 22em;
+    background-image: url(/assetts/games1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game2 {
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 17em;
+    height: 22em;
+    background-image: url(/assetts/games2.jpg);
+    background-size: cover;
+}
+
+.game3 {
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 17em;
+    height: 22em;
+    background-image: url(/assetts/games3.jpg);
+    background-size: cover;
+}
+
+iframe {
+    border: 1px solid white;
+    width: 30%;
+    height: 14em;
+    margin: 3% 35%;
+    box-shadow: 5px 5px 35px white;
+}
+
+.align {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.system {
+    margin: 2% 0;
+    color: black;
+    visibility: hidden;
+}
+
+
+footer {
+    background-color: black;
+    height: 10em;
+}
+
+
+@media only screen and (max-width= 720px){
+
+   p {
+    color: green;
+   }
+
+}
+
+form {
+    color: white;
+    margin: 0 1%;
+}
+
+input#email:hover {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+  25%{transform: translateY(4px);}
+  50%{transform: translateY(-4px);}
+  75%{transform: translateY(4px);}
+}
+    </style>
+
+    <body>
+
+        <div id="games"></div>
+
+         <header id="header"> 
+
+            <nav id="nav-bar">
+                <a href="#info" class="nav-link">Info</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#buy" class="nav-link">Buy</a>
+            </nav>
+
+
+            <div class="flex">
+            <img src="/assetts/pc.jpg" id="header-img">
+            
+           <h1> Low Price Game </h1>
+            </div>
+        
+        </header>
+
+
+        <main>
+<div id="info">
+            <section id="details1"> 
+              <h3 id="logo1">Oiginal Games</h3>
+              <p>We have original games, in the box, with installation help.</p>
+                 
+            </section> 
+
+            <section id="details2">
+                <h3 id="logo2">Fast Delivery</h3>
+                <p>The game is sent by courier, arriving at the destination in a maximum of three working days from the confirmation of the order.</p>
+            </section> 
+            
+
+            <section id="details3">
+            <h3 id="logo3">Free return</h3>
+            <p>Returns are made free of charge within 14 days of receiving the order!</p>
+
+            </section> 
+</div>
+
+
+    <iframe src="/assetts/trailer.mp4" name="video" title="Trailer GTA VI"></iframe>
+
+
+<h1 class="align" id="buy">Games</h1>
+
+     <div id="produce">
+
+        <section class="game1" class="rot">
+
+            <button id="btn1">Afiseaza detalii</button>
+
+   <div class="system">
+
+    <br />
+      RAM: 16GB
+      <br />
+      CPU: i7-12700KF
+      <br />
+      Placa video: NVIDIA GeForce RTX 2060 6GB
+      <br />
+      OS: Windows 10
+      <br />
+      HDD: 65 GB
+      <br />
+      Price: 129$
+      
+   </div>
+
+        </section>
+
+
+        <section class="game2" class="rot">
+
+            <button id="btn2">Afiseaza detalii</button>
+
+   <div class="system">
+
+    <br />
+      RAM: 16GB
+      <br />
+      CPU:  Intel Core i5-10500 6-Core 3.10GHz
+      <br />
+      Placa video: NVIDIA GeForce RTX 2060 6GB
+      <br />
+      OS: Windows 10
+      <br />
+      HDD: HDD: 65 GB
+      <br />
+      Price: 129$
+      
+   </div>
+
+        </section>
+
+
+        <section class="game3" class="rot">
+
+        <button id="btn3">Afiseaza detalii</button>
+
+   <div class="system">
+
+    <br />
+      RAM: 12GB
+      <br />
+      CPU: Intel Core i5-2500K
+      <br />
+      Placa video: NVIDIA GeForce RTX 2060 6GB
+      <br />
+      OS: Windows 10
+      <br />
+      HDD: 175GB free space
+      <br />
+      Price: 129$
+      
+   </div>
+        </section>
+
+     </div>
+
+        </main>
+
+
+
+        <footer id="contact">
+
+            <h3 style="color:white" class="align">Contact for more games</h3>
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+
+    <label for="email">Email:
+ <input id="email" name="email" type="email" placeholder="Please insert the email" required>
+</label>
+
+<label for="submit">
+    <input type="submit" name="submit" id="submit">
+</label>
+
+<div style="float:right">Copyright 2022</div>
+
+</form>
+
+        </footer>
+
+
+        <script>
+            let btn1 = document.getElementById("btn1");
+let system1 = document.getElementsByClassName("system")[0];
+
+
+function myFunction() {
+    system1.style.visibility = "visible";
+    system1.style.border = "1px solid black";
+    system1.style.background = "gray";
+    system1.style.transition = "ease-in-out 1s";
+
+    setTimeout(function(){
+        system1.style.visibility = "hidden";
+    }, 4000);
+};
+
+btn1.addEventListener("click" , myFunction);
+
+
+
+let btn2 = document.getElementById("btn2");
+let system2 = document.getElementsByClassName("system")[1];
+
+
+function myFunction2() {
+    system2.style.visibility = "visible";
+    system2.style.border = "1px solid black";
+    system2.style.background = "gray";
+    system2.style.transition = "ease-in-out 1s";
+
+    setTimeout(function(){
+        system2.style.visibility = "hidden";
+    }, 4000);
+};
+
+btn2.addEventListener("click" , myFunction2)
+
+
+
+let btn3 = document.getElementById("btn3");
+let system3 = document.getElementsByClassName("system")[2];
+
+
+function myFunction3() {
+    system3.style.visibility = "visible";
+    system3.style.border = "1px solid black";
+    system3.style.background = "gray";
+    system3.style.transition = "ease-in-out 1s";
+
+    setTimeout(function(){
+        system3.style.visibility = "hidden";
+    }, 4000);
+};
+
+btn3.addEventListener("click" , myFunction3);
+
+
+let game3 = document.getElementsByClassName("game3");
+        </script>
+    </body>
+</html>
